@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width = device-width, user-scalable = no"> 
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.test{
+		display:inline-block;
+		
+	}
+	.test2{
+		display:inline-block;
+		width:100%;
+		
+	}
+	.test3{
+		display:block;
+		
+	}
+	.test4 {
+		display:inline-block;
+		background-color:#ccc;
+		
+	}
+	</style>
+</head>
+<body>
+	<div>
+	<span class="test">１．spanタグに</span><span class="test">単にInline-blockするとスマフォでもPCでも改行されないと思うよ</span>
+</div>
+<hr/>
+<div>
+	<span class="test2">2．spanタグに</span>width 100%でInline-blockするとスマフォでもPCでも改行される
+</div>
+<hr/>
+<div>
+	<span class="test3">3．spanタグに</span>blockするとスマフォでもPCでも改行される
+</div>
+
+<hr/>
+<div style="width:150px">
+	<span class="test4">４．spanタグに</span><span class="test4">でInline-blockだけで改行する場合</span>
+</div>
+<hr/>
+<div style="width:600px">
+	<span class="test4">5．spanタグに</span><span class="test4">でInline-blockだけ改行される場合</span>
+</div>
+<hr/>
+
+<div style="width:320px">
+<div style="float:left;width:300px">あいうえ</div><div
+style="float:left;width:300px">かきくけ</div>
+</div>
+<br />
+<hr　style="clear:both"/>
+<div style="width:920px">
+<div style="float:left;width:300px">あいうえ</div><div style="float:left;width:300px">かきくけ</div>
+</div>
+
+
+
+</body>
+</html>
